@@ -1,52 +1,71 @@
 {
-	"name": "package_name",
+	"name": "vscode-prismicio",
+	"displayName": "Prismic.io",
 	"version": "0.0.0",
-	"description": "package_description",
+	"description": "Prismic tooling for VS Code",
+	"categories": [
+		"Snippets",
+		"Other"
+	],
 	"keywords": [
 		"typescript",
-		"prismic"
+		"prismic",
+		"vscode"
 	],
 	"repository": {
 		"type": "git",
-		"url": "ssh://git@github.com/github_org_slash_github_repo.git"
+		"url": "ssh://git@github.com/prismicio/prismic-vscode.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
 	"type": "module",
 	"exports": {
 		".": {
-			"require": "./dist/index.cjs",
-			"import": "./dist/index.js"
+			"require": "./dist/extension.cjs",
+			"import": "./dist/extension.js"
 		},
 		"./package.json": "./package.json"
 	},
-	"main": "dist/index.cjs",
-	"module": "dist/index.js",
-	"types": "dist/index.d.ts",
+	"main": "dist/extension.cjs",
+	"module": "dist/extension.js",
+	"types": "dist/extension.d.ts",
 	"files": [
 		"dist",
 		"src"
 	],
 	"scripts": {
+		"vscode:prepublish": "npm run build",
 		"build": "siroc build",
 		"dev": "siroc build --watch",
 		"format": "prettier --write .",
 		"prepare": "npm run build",
-		"release": "npm run test && standard-version && git push --follow-tags && npm run build && npm publish",
+		"release": "npm run test && standard-version && git push --follow-tags && npm run build && vsce publish",
 		"release:dry": "standard-version --dry-run",
-		"release:alpha": "npm run test && standard-version --release-as major --prerelease alpha && git push --follow-tags && npm run build && npm publish --tag alpha",
+		"release:alpha": "npm run test && standard-version --release-as major --prerelease alpha && git push --follow-tags && npm run build && npm vsce --pre-release",
 		"release:alpha:dry": "standard-version --release-as major --prerelease alpha --dry-run",
 		"lint": "eslint --ext .js,.ts .",
 		"unit": "nyc --reporter=lcovonly --reporter=text --exclude-after-remap=false ava",
 		"size": "size-limit",
 		"test": "npm run lint && npm run unit && npm run build && npm run size"
 	},
+	"contributes": {
+		"commands": [
+			{
+				"command": "prismic-io.helloWorld",
+				"title": "Hello World"
+			}
+		]
+	},
+	"activationEvents": [
+		"*"
+	],
 	"devDependencies": {
 		"@size-limit/preset-small-lib": "^7.0.5",
-		"@typescript-eslint/eslint-plugin": "^5.8.1",
-		"@typescript-eslint/parser": "^5.8.1",
+		"@types/vscode": "^1.50.0",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
+		"@typescript-eslint/parser": "^5.9.1",
 		"ava": "^3.15.0",
-		"eslint": "^8.6.0",
+		"eslint": "^8.7.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-tsdoc": "^0.2.14",
@@ -57,12 +76,18 @@
 		"size-limit": "^7.0.5",
 		"standard-version": "^9.3.2",
 		"ts-eager": "^2.0.2",
-		"typescript": "^4.5.4"
+		"typescript": "^4.5.4",
+		"vsce": "^2.6.3",
+		"vscode": "^1.1.37"
+	},
+	"peerDependencies": {
+		"vscode": "^1.1.37"
 	},
 	"engines": {
-		"node": ">=12.7.0"
+		"vscode": "^1.50.0"
 	},
 	"publishConfig": {
 		"access": "public"
-	}
+	},
+	"icon": "https://github.com/prismicio.png"
 }
