@@ -16,7 +16,7 @@ assignees: ""
 
 ### Versions
 
-- @prismicio/vscode: <!-- ex: v0.1.0 -->
+- @prismicio/snippets: <!-- ex: v0.1.0 -->
 - node: <!-- ex: v12.14.0 -->
 
 ### Reproduction

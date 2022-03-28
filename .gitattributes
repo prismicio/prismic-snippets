@@ -11,3 +11,8 @@ yarn.lock -diff
 *.jpeg binary
 *.gif binary
 *.ico binary
+
+# custom
+
+# ignore generated files
+vscode/snippets/* -diff

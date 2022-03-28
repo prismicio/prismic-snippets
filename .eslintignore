@@ -1,8 +1,10 @@
 # .gitignore copy
 
 # custom
-dist
-examples/**/package-lock.json
+*.vsix
+vscode/README.md
+vscode/CHANGELOG.md
+vscode/LICENSE
 
 # os
 .DS_Store

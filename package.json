@@ -1,89 +1,53 @@
 {
-	"name": "vscode-prismicio",
-	"displayName": "Prismic.io",
+	"name": "@prismicio/snippets",
 	"version": "0.0.0",
-	"description": "Prismic tooling for VS Code",
-	"categories": [
-		"Snippets",
-		"Other"
-	],
+	"description": "Prismic snippets for VS Code, Vim, Sublime, and IntelliJ",
+	"private": true,
 	"keywords": [
 		"typescript",
 		"prismic",
-		"vscode"
+		"vscode",
+		"vim",
+		"sublime",
+		"intellij"
 	],
 	"repository": {
 		"type": "git",
-		"url": "ssh://git@github.com/prismicio/prismic-vscode.git"
+		"url": "ssh://git@github.com/prismicio/prismic-snippets.git"
 	},
 	"license": "Apache-2.0",
 	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
 	"type": "module",
-	"exports": {
-		".": {
-			"require": "./dist/extension.cjs",
-			"import": "./dist/extension.js"
-		},
-		"./package.json": "./package.json"
-	},
-	"main": "dist/extension.cjs",
-	"module": "dist/extension.js",
-	"types": "dist/extension.d.ts",
-	"files": [
-		"dist",
-		"src"
-	],
 	"scripts": {
-		"vscode:prepublish": "npm run build",
-		"build": "siroc build",
-		"dev": "siroc build --watch",
+		"build": "cross-env DEBUG=* node --experimental-json-modules scripts/build",
 		"format": "prettier --write .",
 		"prepare": "npm run build",
-		"release": "npm run test && standard-version && git push --follow-tags && npm run build && vsce publish",
+		"release": "npm run test && standard-version && git push --follow-tags && npm run build && npm run release -w vscode",
 		"release:dry": "standard-version --dry-run",
-		"release:alpha": "npm run test && standard-version --release-as major --prerelease alpha && git push --follow-tags && npm run build && npm vsce --pre-release",
-		"release:alpha:dry": "standard-version --release-as major --prerelease alpha --dry-run",
 		"lint": "eslint --ext .js,.ts .",
-		"unit": "nyc --reporter=lcovonly --reporter=text --exclude-after-remap=false ava",
-		"size": "size-limit",
+		"unit": "echo \"no unit test\"",
+		"size": "echo \"no size test\"",
 		"test": "npm run lint && npm run unit && npm run build && npm run size"
 	},
-	"contributes": {
-		"commands": [
-			{
-				"command": "prismic-io.helloWorld",
-				"title": "Hello World"
-			}
-		]
+	"engines": {
+		"node": ">=14.14.0"
 	},
-	"activationEvents": [
-		"*"
-	],
 	"devDependencies": {
-		"@size-limit/preset-small-lib": "^7.0.5",
-		"@types/vscode": "^1.50.0",
-		"@typescript-eslint/eslint-plugin": "^5.9.1",
-		"@typescript-eslint/parser": "^5.9.1",
-		"ava": "^3.15.0",
-		"eslint": "^8.7.0",
-		"eslint-config-prettier": "^8.3.0",
+		"@typescript-eslint/eslint-plugin": "^5.16.0",
+		"@typescript-eslint/parser": "^5.16.0",
+		"cross-env": "7.0.3",
+		"debug": "4.3.4",
+		"eslint": "^8.12.0",
+		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-tsdoc": "^0.2.14",
-		"nyc": "^15.1.0",
-		"prettier": "^2.5.1",
-		"prettier-plugin-jsdoc": "^0.3.30",
-		"siroc": "^0.16.0",
-		"size-limit": "^7.0.5",
-		"standard-version": "^9.3.2",
-		"ts-eager": "^2.0.2",
-		"typescript": "^4.5.4",
-		"vsce": "^2.6.3"
+		"front-matter": "4.0.2",
+		"globby": "11.1.0",
+		"prettier": "^2.6.1",
+		"prettier-plugin-jsdoc": "^0.3.33",
+		"standard-version": "^9.3.2"
 	},
-	"engines": {
-		"vscode": "^1.50.0"
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"icon": "https://github.com/prismicio.png"
+	"workspaces": [
+		"vscode"
+	]
 }

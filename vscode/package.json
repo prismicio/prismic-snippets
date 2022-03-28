@@ -1,0 +1,40 @@
+{
+	"name": "prismicio-snippets",
+	"displayName": "Prismic.io snippets",
+	"publisher": "prismicio",
+	"version": "0.0.0",
+	"description": "Prismic snippets for VS Code",
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"typescript",
+		"prismic",
+		"vscode"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/prismicio/prismic-snippets.git",
+		"directory": "vscode"
+	},
+	"license": "Apache-2.0",
+	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
+	"scripts": {
+		"release": "vsce package && vsce publish"
+	},
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.code-snippets"
+			}
+		]
+	},
+	"devDependencies": {
+		"vsce": "^2.7.0"
+	},
+	"engines": {
+		"vscode": "^1.50.0"
+	},
+	"icon": "icon.png"
+}

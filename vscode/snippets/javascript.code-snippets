@@ -1,0 +1,10 @@
+{
+  "Foo Bar Baz": {
+    "scope": "javascript",
+    "prefix": "fooBarBaz",
+    "description": "Lorem ipsum",
+    "body": [
+      "const foo = \"bar\""
+    ]
+  }
+}

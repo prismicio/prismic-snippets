@@ -3,14 +3,14 @@
 TODO: Go through all "TODO" comments in the project
 
 TODO: Replace all on all files (README.md, CONTRIBUTING.md, bug_report.md, package.json):
-- @prismicio/vscode
-- Prismic tooling for VS Code
-- prismicio/prismic-vscode
-- prismic-vscode
+- @prismicio/snippets
+- Prismic snippets for VS Code, Vim, Sublime, and IntelliJ
+- prismicio/prismic-snippets
+- prismic-snippets
 
 -->
 
-# @prismicio/vscode
+# @prismicio/snippets
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -19,9 +19,11 @@ TODO: Replace all on all files (README.md, CONTRIBUTING.md, bug_report.md, packa
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 [![License][license-src]][license-href]
 
+⚠ This project is in an experimental state, things might change, a lot!
+
 <!-- TODO: Replacing link to Prismic with [Prismic][prismic] is useful here -->
 
-[Prismic][prismic] tooling for VS Code.
+[Prismic][prismic] snippets for VS Code, Vim, Sublime, and IntelliJ.
 
 <!--
 
@@ -38,7 +40,7 @@ Non-breaking space: &nbsp; are here on purpose to fix emoji rendering on certain
 ## Install
 
 ```bash
-npm install @prismicio/vscode
+npm install @prismicio/snippets
 ```
 
 ## Documentation
@@ -90,21 +92,21 @@ For more clarity on this project and its structure you can also check out the de
 <!-- TODO: Replace link with a more useful one if available -->
 
 [forum-question]: https://community.prismic.io
-[repo-bug-report]: https://github.com/prismicio/prismic-vscode/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[repo-feature-request]: https://github.com/prismicio/prismic-vscode/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-[repo-pull-requests]: https://github.com/prismicio/prismic-vscode/pulls
+[repo-bug-report]: https://github.com/prismicio/prismic-snippets/issues/new?assignees=&labels=bug&template=bug_report.md&title=
+[repo-feature-request]: https://github.com/prismicio/prismic-snippets/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
+[repo-pull-requests]: https://github.com/prismicio/prismic-snippets/pulls
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@prismicio/vscode/latest.svg
-[npm-version-href]: https://npmjs.com/package/@prismicio/vscode
-[npm-downloads-src]: https://img.shields.io/npm/dm/@prismicio/vscode.svg
-[npm-downloads-href]: https://npmjs.com/package/@prismicio/vscode
-[github-actions-ci-src]: https://github.com/prismicio/prismic-vscode/workflows/ci/badge.svg
-[github-actions-ci-href]: https://github.com/prismicio/prismic-vscode/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/github/prismicio/prismic-vscode.svg
-[codecov-href]: https://codecov.io/gh/prismicio/prismic-vscode
+[npm-version-src]: https://img.shields.io/npm/v/@prismicio/snippets/latest.svg
+[npm-version-href]: https://npmjs.com/package/@prismicio/snippets
+[npm-downloads-src]: https://img.shields.io/npm/dm/@prismicio/snippets.svg
+[npm-downloads-href]: https://npmjs.com/package/@prismicio/snippets
+[github-actions-ci-src]: https://github.com/prismicio/prismic-snippets/workflows/ci/badge.svg
+[github-actions-ci-href]: https://github.com/prismicio/prismic-snippets/actions?query=workflow%3Aci
+[codecov-src]: https://img.shields.io/codecov/c/github/prismicio/prismic-snippets.svg
+[codecov-href]: https://codecov.io/gh/prismicio/prismic-snippets
 [conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [conventional-commits-href]: https://conventionalcommits.org
-[license-src]: https://img.shields.io/npm/l/@prismicio/vscode.svg
-[license-href]: https://npmjs.com/package/@prismicio/vscode
+[license-src]: https://img.shields.io/npm/l/@prismicio/snippets.svg
+[license-href]: https://npmjs.com/package/@prismicio/snippets
