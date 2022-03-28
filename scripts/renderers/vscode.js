@@ -5,7 +5,6 @@ import url from "node:url";
 import { default as _debug } from "debug";
 const debug = _debug("renderer:vscode");
 
-import pkg from "../../package.json";
 import { copy } from "./utils.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
@@ -64,9 +63,13 @@ export const render = async (snippets) => {
 	};
 
 	debug("Updating %o", "package.json");
+	const rootPackageJSONPath = path.join(ROOT_DIR, "./package.json");
+	const rootPackageJSON = JSON.parse(
+		await fs.readFile(rootPackageJSONPath, "utf8"),
+	);
 	const packageJSONPath = path.join(OUTPUT_DIR, "./package.json");
 	const packageJSON = JSON.parse(await fs.readFile(packageJSONPath, "utf8"));
-	packageJSON.version = pkg.version;
+	packageJSON.version = rootPackageJSON.version;
 	packageJSON.contributes = contributes;
 	await fs.writeFile(
 		packageJSONPath,
