@@ -30,7 +30,7 @@
 		"test": "npm run lint && npm run unit && npm run build && npm run size"
 	},
 	"engines": {
-		"node": ">=14.14.0"
+		"node": ">=16.10.0"
 	},
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.16.0",
