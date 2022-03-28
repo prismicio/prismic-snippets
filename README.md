@@ -12,10 +12,7 @@ TODO: Replace all on all files (README.md, CONTRIBUTING.md, bug_report.md, packa
 
 # @prismicio/snippets
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![Github Actions CI][github-actions-ci-src]][github-actions-ci-href]
-[![Codecov][codecov-src]][codecov-href]
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 [![License][license-src]][license-href]
 
@@ -98,14 +95,8 @@ For more clarity on this project and its structure you can also check out the de
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/@prismicio/snippets/latest.svg
-[npm-version-href]: https://npmjs.com/package/@prismicio/snippets
-[npm-downloads-src]: https://img.shields.io/npm/dm/@prismicio/snippets.svg
-[npm-downloads-href]: https://npmjs.com/package/@prismicio/snippets
 [github-actions-ci-src]: https://github.com/prismicio/prismic-snippets/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/prismicio/prismic-snippets/actions?query=workflow%3Aci
-[codecov-src]: https://img.shields.io/codecov/c/github/prismicio/prismic-snippets.svg
-[codecov-href]: https://codecov.io/gh/prismicio/prismic-snippets
 [conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [conventional-commits-href]: https://conventionalcommits.org
 [license-src]: https://img.shields.io/npm/l/@prismicio/snippets.svg
