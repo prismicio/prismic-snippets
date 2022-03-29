@@ -1,6 +1,6 @@
 ---
 name: "Prismic Group Scaffold"
-description: "Yields a ready-to-use scaffold for templating Prismic groups and Slice repeatable sections"
+description: "Yields a ready-to-use Group field/Slice repeatable templating scaffold"
 scope: ["vue-html", "html"]
 prefix: "prismicGroupScaffold"
 ---
