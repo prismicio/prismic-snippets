@@ -1,8 +1,8 @@
 ---
-name: "Prismic Group Scaffold"
-description: "Yields a ready-to-use Group field/Slice repeatable templating scaffold"
+name: "Prismic Group"
+description: "Yields a ready-to-use Group field/Slice repeatable template"
 scope: ["vue-html", "html"]
-prefix: "prismicGroupScaffold"
+prefix: "prismicGroup"
 ---
 
 ```html
