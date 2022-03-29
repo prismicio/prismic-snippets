@@ -15,7 +15,9 @@ const handler = () => {
 	const now = new Date();
 	debug(
 		"Change detected, rebuilding... (%o)",
-		`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`,
+		`${`00${now.getHours()}`.slice(-2)}:${`00${now.getMinutes()}`.slice(
+			-2,
+		)}:${`00${now.getSeconds()}`.slice(-2)}`,
 	);
 	process.run();
 };
