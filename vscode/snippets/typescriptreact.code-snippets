@@ -1,0 +1,104 @@
+{
+  "Prismic Group": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicGroup",
+    "description": "Yields a ready-to-use Group field/Slice repeatable template",
+    "body": [
+      "{${1:slice.items}.map((${2:item}) => (",
+      "\t<${3:div} key={${2:item}}>",
+      "\t\t{{ ${2:item} }}${4}",
+      "\t</${3:div}>",
+      "))}"
+    ]
+  },
+  "Prismic Link": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicLink",
+    "description": "Yields a ready-to-use `<PrismicLink />` component",
+    "body": [
+      "<PrismicLink field={${1:doc.data.field}}>",
+      "\t${2}",
+      "</PrismicLink>"
+    ]
+  },
+  "Prismic Provider": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicProvider",
+    "description": "Yields a ready-to-use `<PrismicProvider />` component",
+    "body": [
+      "<PrismicProvider client={${1:client}}>",
+      "\t{children}",
+      "</PrismicProvider>"
+    ]
+  },
+  "Prismic Rich Text": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicRichText",
+    "description": "Yields a ready-to-use `<PrismicRichText />` component",
+    "body": [
+      "<PrismicRichText field={${1:doc.data.field}} />"
+    ]
+  },
+  "Prismic Slice Scaffold": {
+    "scope": "typescriptreact",
+    "prefix": "prismicSliceScaffold",
+    "description": "Yields a ready-to-use Slice components scaffold",
+    "body": [
+      "import { SliceComponentProps } from \"@prismicio/react\";",
+      "",
+      "export default function ${1:SliceName}({ slice }: SliceComponentProps) {",
+      "  return (${2});",
+      "};"
+    ]
+  },
+  "Prismic Slice Simulator Scaffold": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicSliceSimulatorScaffold",
+    "description": "Yields a ready-to-use Slice Simulator scaffold",
+    "body": [
+      "import { SliceSimulator } from \"@prismicio/slice-simulator-react\";",
+      "import { SliceZone } from \"@prismicio/react\";",
+      "",
+      "import state from \"../.slicemachine/libraries-state.json\";",
+      "// A component map mapping Prismic slice types to React components",
+      "import { components } from \"${1:../slices/components}\";",
+      "",
+      "const SliceSimulatorPage = () => {",
+      "  return (",
+      "    <SliceSimulator",
+      "      sliceZone={({ slices }) => (",
+      "        <SliceZone slices={slices} components={components} />",
+      "      )}",
+      "      state={state}",
+      "    />",
+      "  );",
+      "};",
+      "",
+      "export default SliceSimulatorPage;"
+    ]
+  },
+  "Prismic SliceZone": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicSliceZone",
+    "description": "Yields a ready-to-use `<SliceZone />` component",
+    "body": [
+      "<SliceZone slices={${1:doc.data.body}} components={${2:components}} />"
+    ]
+  },
+  "Prismic Text": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicText",
+    "description": "Yields a ready-to-use `<PrismicText />` component",
+    "body": [
+      "<PrismicText field={${1:doc.data.field}} />"
+    ]
+  },
+  "Prismic Toolbar": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "prismicToolbar",
+    "description": "Yields a ready-to-use `<PrismicToolbar />` component",
+    "body": [
+      "<PrismicToolbar repositoryName=\"${1:repo-name}\" />"
+    ]
+  }
+}

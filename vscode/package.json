@@ -2,7 +2,7 @@
 	"name": "prismicio-snippets",
 	"displayName": "Prismic.io snippets",
 	"publisher": "prismicio",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "Prismic snippets for VS Code",
 	"categories": [
 		"Snippets"
@@ -25,8 +25,32 @@
 	"contributes": {
 		"snippets": [
 			{
+				"language": "typescript",
+				"path": "./snippets/typescript.code-snippets"
+			},
+			{
 				"language": "javascript",
 				"path": "./snippets/javascript.code-snippets"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/javascriptreact.code-snippets"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/typescriptreact.code-snippets"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/vue-html.code-snippets"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.code-snippets"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/vue.code-snippets"
 			}
 		]
 	},

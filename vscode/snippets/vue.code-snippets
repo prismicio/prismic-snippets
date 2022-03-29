@@ -1,0 +1,52 @@
+{
+  "Prismic Slice Scaffold": {
+    "scope": "vue",
+    "prefix": "prismicSliceScaffold",
+    "description": "Yields a ready-to-use Slice components scaffold",
+    "body": [
+      "<template>",
+      "\t${1}",
+      "</template>",
+      "",
+      "<script>",
+      "import { getSliceComponentProps } from \"@prismicio/vue/components\";",
+      "",
+      "export default {",
+      "  // The array passed to `getSliceComponentProps` is purely optional.",
+      "\t// Consider it as a visual hint for you when templating your slice.",
+      "  props: getSliceComponentProps([\"slice\", \"index\", \"slices\", \"context\"])",
+      "}",
+      "</script>"
+    ]
+  },
+  "Prismic Slice Simulator Scaffold": {
+    "scope": "vue",
+    "prefix": "prismicSliceSimulatorScaffold",
+    "description": "Yields a ready-to-use Slice Simulator scaffold",
+    "body": [
+      "<template>",
+      "\t<SliceSimulator :state=\"state\" #default=\"{ slices }\">",
+      "\t\t<SliceZone :slices=\"slices\" :components=\"components\" />",
+      "\t</SliceSimulator>",
+      "</template>",
+      "",
+      "<script>",
+      "import { SliceSimulator } from \"@prismicio/slice-simulator-vue\";",
+      "",
+      "import state from \"~~/.slicemachine/libraries-state.json\";",
+      "// A component map mapping Prismic slice types to Vue components",
+      "import components from \"${1:~~/slices/components}\";",
+      "",
+      "export default {",
+      "\tcomponents: {",
+      "\t\tSliceSimulator,",
+      "\t\tSliceZone,",
+      "\t},",
+      "\tdata() {",
+      "\t\treturn { state, components };",
+      "\t},",
+      "};",
+      "</script>"
+    ]
+  }
+}
