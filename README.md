@@ -42,6 +42,41 @@ npm install @prismicio/snippets
 
 ## Documentation
 
+Every snippets are prefixed `prismic(...)`. There are two categories of snippets: templating snippets and scaffolding snippets.
+
+### Templating snippets
+
+**React & Vue**
+
+- `prismicText`: Yields a ready-to-use `<PrismicText />` component
+- `prismicRichText`: Yields a ready-to-use `<PrismicRichText />` component
+- `prismicLink`: Yields a ready-to-use `<PrismicLink />` component
+- `prismicSliceZone`: Yields a ready-to-use `<SliceZone />` component
+- `prismicGroup`: Yields a ready-to-use Group field/Slice repeatable template
+
+**React only**
+
+- `prismicProvider`: Yields a ready-to-use `<PrismicProvider />` component
+- `prismicToolbar`: Yields a ready-to-use `<PrismicToolbar />` component
+
+**Vue only**
+
+- `prismicImage`: Yields a ready-to-use `<PrismicImage />` component in Vue
+- `prismicEmbed`: Yields a ready-to-use `<PrismicEmbed />` component in Vue
+
+### Scaffolding snippets
+
+**React & Vue**
+
+- `prismicSliceScaffold`: Yields a ready-to-use Slice components scaffold
+- `prismicSliceSimulatorScaffold`: Yields a ready-to-use Slice Simulator scaffold
+
+**JavaScript & TypeScript**
+
+- `prismicRouteResolverScaffold`: Yields a ready-to-use Route Resolver scaffold
+- `prismicLinkResolverScaffold`: Yields a ready-to-use Link Resolver scaffold
+- `prismicHTMLSerializerScaffold`: Yields a ready-to-use HTML Serializer scaffold
+
 To discover what's new on this package check out [the changelog][changelog]. For full documentation, visit the [official Prismic documentation][prismic-docs].
 
 ## Contributing
