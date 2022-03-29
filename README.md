@@ -42,7 +42,7 @@ npm install @prismicio/snippets
 
 ## Documentation
 
-Every snippets are prefixed `prismic(...)`. There are two categories of snippets: templating snippets and scaffolding snippets.
+Every snippets are prefixed with `prismic(...)`. There are two categories of snippets: **templating snippets** and **scaffolding snippets**.
 
 ### Templating snippets
 
@@ -61,8 +61,8 @@ Every snippets are prefixed `prismic(...)`. There are two categories of snippets
 
 **Vue only**
 
-- `prismicImage`: Yields a ready-to-use `<PrismicImage />` component in Vue
-- `prismicEmbed`: Yields a ready-to-use `<PrismicEmbed />` component in Vue
+- `prismicImage`: Yields a ready-to-use `<PrismicImage />` component
+- `prismicEmbed`: Yields a ready-to-use `<PrismicEmbed />` component
 
 ### Scaffolding snippets
 
@@ -76,6 +76,8 @@ Every snippets are prefixed `prismic(...)`. There are two categories of snippets
 - `prismicRouteResolverScaffold`: Yields a ready-to-use Route Resolver scaffold
 - `prismicLinkResolverScaffold`: Yields a ready-to-use Link Resolver scaffold
 - `prismicHTMLSerializerScaffold`: Yields a ready-to-use HTML Serializer scaffold
+
+---
 
 To discover what's new on this package check out [the changelog][changelog]. For full documentation, visit the [official Prismic documentation][prismic-docs].
 
