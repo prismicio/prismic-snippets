@@ -19,6 +19,7 @@
 	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
 	"type": "module",
 	"scripts": {
+		"dev": "cross-env DEBUG=* node --experimental-json-modules scripts/dev",
 		"build": "cross-env DEBUG=* node --experimental-json-modules scripts/build",
 		"format": "prettier --write .",
 		"prepare": "npm run build",
@@ -35,6 +36,7 @@
 	"devDependencies": {
 		"@typescript-eslint/eslint-plugin": "^5.16.0",
 		"@typescript-eslint/parser": "^5.16.0",
+		"chokidar": "3.5.3",
 		"cross-env": "7.0.3",
 		"debug": "4.3.4",
 		"eslint": "^8.12.0",

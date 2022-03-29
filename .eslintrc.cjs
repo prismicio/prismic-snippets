@@ -15,7 +15,7 @@ module.exports = {
 	],
 	plugins: ["eslint-plugin-tsdoc"],
 	rules: {
-		"no-console": ["warn", { allow: ["info", "warn", "error"] }],
+		"no-console": ["warn", { allow: ["info", "warn", "error", "clear"] }],
 		"no-debugger": "warn",
 		"no-undef": "off",
 		curly: "error",
