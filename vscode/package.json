@@ -3,14 +3,16 @@
 	"displayName": "Prismic.io snippets",
 	"publisher": "prismicio",
 	"version": "0.0.4",
-	"description": "Prismic snippets for VS Code",
+	"description": "Prismic snippets for VS Code and Vim",
 	"categories": [
 		"Snippets"
 	],
 	"keywords": [
 		"typescript",
 		"prismic",
-		"vscode"
+		"vscode",
+		"vim",
+		"coc.nvim"
 	],
 	"repository": {
 		"type": "git",
@@ -19,8 +21,12 @@
 	},
 	"license": "Apache-2.0",
 	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
+	"files": [
+		"icon.png",
+		"snippets"
+	],
 	"scripts": {
-		"release": "vsce package && vsce publish"
+		"release": "vsce package && vsce publish && npm publish"
 	},
 	"contributes": {
 		"snippets": [
