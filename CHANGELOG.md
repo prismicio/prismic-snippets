@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/prismicio/prismic-snippets/compare/v0.0.1...v0.0.2) (2022-03-30)
+
+
+### Features
+
+* **sublime:** add sublime snippets ([5db6d48](https://github.com/prismicio/prismic-snippets/commit/5db6d48fda8345c90998d05ec1685dd2c13467fa))
+* **vscode:** sort contributes object ([e95acb0](https://github.com/prismicio/prismic-snippets/commit/e95acb039330a901dd42cc77e936bb38e8ec3cf6))
+
+
+### Chore
+
+* **release:** 0.0.1 ([1172a94](https://github.com/prismicio/prismic-snippets/commit/1172a945e8fdfe80f51742f098642005201472ff))
+
+
+### Refactor
+
+* don't duplicate scope ([d37f9b5](https://github.com/prismicio/prismic-snippets/commit/d37f9b52b44dce1e35a9d3300599176d2be554cf))
+
 ### 0.0.1 (2022-03-29)
 
 
