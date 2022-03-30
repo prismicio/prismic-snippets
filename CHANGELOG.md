@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/prismicio/prismic-snippets/compare/v0.0.4...v0.0.5) (2022-03-30)
+
+
+### Documentation
+
+* add badges back ([217c9f7](https://github.com/prismicio/prismic-snippets/commit/217c9f715864b308039455b7f16b54c9a8a82ead))
+* update readme ([3b69b7a](https://github.com/prismicio/prismic-snippets/commit/3b69b7a7ca42d050f14ed417f16dd7d048da02b7))
+
 ### [0.0.4](https://github.com/prismicio/prismic-snippets/compare/v0.0.3...v0.0.4) (2022-03-30)
 
 
