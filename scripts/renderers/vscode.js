@@ -55,12 +55,14 @@ const writeSnippetFiles = (snippetFiles) => {
 const updatePackageJSON = async (snippetFiles) => {
 	debug("Updating %o", "package.json");
 	const contributes = {
-		snippets: Object.keys(snippetFiles).map((language) => {
-			return {
-				language: language,
-				path: `./snippets/${language}.code-snippets`,
-			};
-		}),
+		snippets: Object.keys(snippetFiles)
+			.sort()
+			.map((language) => {
+				return {
+					language: language,
+					path: `./snippets/${language}.code-snippets`,
+				};
+			}),
 	};
 	const rootPackageJSONPath = path.join(ROOT_DIR, "./package.json");
 	const rootPackageJSON = JSON.parse(

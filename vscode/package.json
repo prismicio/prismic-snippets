@@ -25,8 +25,8 @@
 	"contributes": {
 		"snippets": [
 			{
-				"language": "typescript",
-				"path": "./snippets/typescript.code-snippets"
+				"language": "html",
+				"path": "./snippets/html.code-snippets"
 			},
 			{
 				"language": "javascript",
@@ -37,20 +37,20 @@
 				"path": "./snippets/javascriptreact.code-snippets"
 			},
 			{
+				"language": "typescript",
+				"path": "./snippets/typescript.code-snippets"
+			},
+			{
 				"language": "typescriptreact",
 				"path": "./snippets/typescriptreact.code-snippets"
 			},
 			{
-				"language": "vue-html",
-				"path": "./snippets/vue-html.code-snippets"
-			},
-			{
-				"language": "html",
-				"path": "./snippets/html.code-snippets"
-			},
-			{
 				"language": "vue",
 				"path": "./snippets/vue.code-snippets"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/vue-html.code-snippets"
 			}
 		]
 	},
