@@ -36,11 +36,11 @@ Non-breaking space: &nbsp; are here on purpose to fix emoji rendering on certain
 
 ## Install
 
-**VS Code**
+### VS Code
 
 Install extension from [VS Code Marketplace][vs-code-marketplace-src].
 
-**Vim**
+### Vim
 
 Install extension using [coc.nvim][coc-nvim-src].
 
@@ -48,11 +48,11 @@ Install extension using [coc.nvim][coc-nvim-src].
 :CocInstall https://github.com/prismicio/prismic-snippets
 ```
 
-**Sublime**
+### Sublime
 
 Install package from [Package Control][sublime-package-control-src].
 
-**IntelliJ**
+### IntelliJ
 
 :construction:
 
