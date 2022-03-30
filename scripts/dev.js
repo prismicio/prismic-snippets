@@ -2,7 +2,7 @@ import path from "node:path";
 import url from "node:url";
 
 import { default as _debug } from "debug";
-const debug = _debug("dev");
+const debug = _debug("process:dev");
 
 import chokidar from "chokidar";
 

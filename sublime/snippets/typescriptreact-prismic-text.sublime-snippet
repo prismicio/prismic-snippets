@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<PrismicText field={${1:doc.data.field}} />
+]]></content>
+	<tabTrigger>prismicText</tabTrigger>
+	<scope>source.tsx</scope>
+	<description>Yields a ready-to-use `<PrismicText />` component</description>
+</snippet>

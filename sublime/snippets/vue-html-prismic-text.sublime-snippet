@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<PrismicText :field="${1:doc.data.field}" ${3:wrapper="${2:div}" }/>
+]]></content>
+	<tabTrigger>prismicText</tabTrigger>
+	<scope>text.html.vue</scope>
+	<description>Yields a ready-to-use `<PrismicText />` component</description>
+</snippet>

@@ -5,7 +5,7 @@ import url from "node:url";
 import { default as _debug } from "debug";
 const debug = _debug("renderer:vscode");
 
-import { copy } from "./utils.js";
+import { mkNewDir, copy } from "./utils.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
@@ -81,8 +81,7 @@ const updatePackageJSON = async (snippetFiles) => {
 };
 
 export const render = async (snippets) => {
-	await fs.rm(SNIPPETS_DIR, { recursive: true });
-	fs.mkdir(SNIPPETS_DIR);
+	await mkNewDir(SNIPPETS_DIR);
 
 	const snippetFiles = getSnippetFiles(snippets);
 

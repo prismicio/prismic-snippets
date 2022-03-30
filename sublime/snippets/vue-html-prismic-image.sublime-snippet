@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<PrismicImage :field="${1:doc.data.field}" />
+]]></content>
+	<tabTrigger>prismicImage</tabTrigger>
+	<scope>text.html.vue</scope>
+	<description>Yields a ready-to-use `<PrismicImage />` component</description>
+</snippet>

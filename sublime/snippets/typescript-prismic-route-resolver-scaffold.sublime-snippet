@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+[
+	{
+		type: "${1:page}",
+		path: "${2:path}",
+		// resolver: {
+		// 	parent: "${4:parent_page}",
+		// }
+	}
+]
+]]></content>
+	<tabTrigger>prismicRouteResolverScaffold</tabTrigger>
+	<scope>source.ts</scope>
+	<description>Yields a ready-to-use Route Resolver scaffold</description>
+</snippet>

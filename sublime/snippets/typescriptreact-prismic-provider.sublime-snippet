@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<PrismicProvider client={${1:client}}>
+	{children}
+</PrismicProvider>
+]]></content>
+	<tabTrigger>prismicProvider</tabTrigger>
+	<scope>source.tsx</scope>
+	<description>Yields a ready-to-use `<PrismicProvider />` component</description>
+</snippet>

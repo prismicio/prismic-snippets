@@ -7,6 +7,6 @@ prefix: "prismicProvider"
 
 ```jsx
 <PrismicProvider client={${1:client}}>
-	{children}
+	{children}${2}
 </PrismicProvider>
 ```

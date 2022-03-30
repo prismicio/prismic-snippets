@@ -3,18 +3,18 @@ import path from "node:path";
 import url from "node:url";
 
 import { default as _debug } from "debug";
-const debug = _debug("build");
+const debug = _debug("process");
 
 import fm from "front-matter";
 import globby from "globby";
 
-import { vscode } from "./renderers/index.js";
+import { sublime, vscode } from "./renderers/index.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 // Config
 const SRC_DIR = path.join(__dirname, "../src");
-const RENDERERS = [vscode];
+const RENDERERS = [sublime, vscode];
 
 // Helpers
 const getSnippetFiles = () => {
@@ -62,4 +62,5 @@ export const run = async () => {
 
 	debug("Rendering snippets...");
 	await renderSnippets(snippets);
+	debug("Snippets rendered!");
 };
