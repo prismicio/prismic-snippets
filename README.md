@@ -46,7 +46,7 @@ Install extension from [VS Code Marketplace][vs-code-marketplace-src].
 Install extension using [coc.nvim][coc-nvim-src].
 
 ```
-:CocInstall prismicio-snippets
+:CocInstall prismicio-snippets coc-snippets
 ```
 
 ### Sublime
