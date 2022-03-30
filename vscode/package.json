@@ -64,7 +64,8 @@
 		"vsce": "^2.7.0"
 	},
 	"engines": {
-		"vscode": "^1.50.0"
+		"vscode": "^1.50.0",
+		"coc": "^0.0.80"
 	},
 	"icon": "icon.png"
 }
