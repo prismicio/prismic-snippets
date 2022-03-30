@@ -36,9 +36,25 @@ Non-breaking space: &nbsp; are here on purpose to fix emoji rendering on certain
 
 ## Install
 
-```bash
-npm install @prismicio/snippets
+**VS Code**
+
+Install extension from [VS Code Marketplace][vs-code-marketplace-src].
+
+**Vim**
+
+Install extension using [coc.nvim][coc-nvim-src].
+
+```vim
+:CocInstall https://github.com/prismicio/prismic-snippets
 ```
+
+**Sublime**
+
+Install package from [Package Control][sublime-package-control-src].
+
+**IntelliJ**
+
+:construction:
 
 ## Documentation
 
@@ -122,6 +138,9 @@ For more clarity on this project and its structure you can also check out the de
 [prismic-docs]: https://prismic.io/docs
 [changelog]: ./CHANGELOG.md
 [contributing]: ./CONTRIBUTING.md
+[vs-code-marketplace-src]: https://marketplace.visualstudio.com/items?itemName=prismicio.prismicio-snippets
+[coc-nvim-src]: https://github.com/neoclide/coc.nvim
+[sublime-package-control-src]: https://packagecontrol.io/packages/Prismic.io%20snippets
 
 <!-- TODO: Replace link with a more useful one if available -->
 
