@@ -2,7 +2,7 @@
 	"name": "prismicio-snippets",
 	"displayName": "Prismic.io snippets",
 	"publisher": "prismicio",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Prismic snippets for VS Code",
 	"categories": [
 		"Snippets"

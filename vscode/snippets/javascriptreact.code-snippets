@@ -27,7 +27,7 @@
     "description": "Yields a ready-to-use `<PrismicProvider />` component",
     "body": [
       "<PrismicProvider client={${1:client}}>",
-      "\t{children}",
+      "\t{children}${2}",
       "</PrismicProvider>"
     ]
   },
