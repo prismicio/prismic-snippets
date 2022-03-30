@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/prismicio/prismic-snippets/compare/v0.0.3...v0.0.4) (2022-03-30)
+
+
+### Refactor
+
+* bump `vscode/package.json` using standard version ([dff3516](https://github.com/prismicio/prismic-snippets/commit/dff3516e7e1d18f82ce09e30279ee103ac7e6a75))
+
 ### [0.0.3](https://github.com/prismicio/prismic-snippets/compare/v0.0.2...v0.0.3) (2022-03-30)
 
 
