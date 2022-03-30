@@ -15,4 +15,11 @@ yarn.lock -diff
 # custom
 
 # ignore generated files
+sublime/snippets/* -diff
 vscode/snippets/* -diff
+
+# ignore from exports
+.github export-ignore
+.vscode export-ignore
+script export-ignore
+src export-ignore
