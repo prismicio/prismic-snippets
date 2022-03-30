@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/prismicio/prismic-snippets/compare/v0.0.2...v0.0.3) (2022-03-30)
+
+
+### Documentation
+
+* update doc ([2f9941f](https://github.com/prismicio/prismic-snippets/commit/2f9941f42458da49d747fb6ac5c1af29f06d4629))
+* update doc ([82f9443](https://github.com/prismicio/prismic-snippets/commit/82f9443e7b0ad0f5f1204e79ae248c0c4abde957))
+* update doc ([2bfe602](https://github.com/prismicio/prismic-snippets/commit/2bfe602c7c9e78c9e98073a5150d23b629c651ef))
+
 ### [0.0.2](https://github.com/prismicio/prismic-snippets/compare/v0.0.1...v0.0.2) (2022-03-30)
 
 
