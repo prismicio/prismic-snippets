@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/prismicio/prismic-snippets/compare/v0.0.5...v0.0.6) (2022-03-30)
+
+
+### Bug Fixes
+
+* **sublime:** escape description ([49786b1](https://github.com/prismicio/prismic-snippets/commit/49786b1315f26a4164250f369fd95e3fd313bb2e))
+
+
+### Documentation
+
+* add `coc-snippets` to Vim installation ([125e314](https://github.com/prismicio/prismic-snippets/commit/125e314196dd4924dfa0bcd99b732223f51482d1))
+
 ### [0.0.5](https://github.com/prismicio/prismic-snippets/compare/v0.0.4...v0.0.5) (2022-03-30)
 
 
