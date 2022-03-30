@@ -64,13 +64,8 @@ const updatePackageJSON = async (snippetFiles) => {
 				};
 			}),
 	};
-	const rootPackageJSONPath = path.join(ROOT_DIR, "./package.json");
-	const rootPackageJSON = JSON.parse(
-		await fs.readFile(rootPackageJSONPath, "utf8"),
-	);
 	const packageJSONPath = path.join(OUTPUT_DIR, "./package.json");
 	const packageJSON = JSON.parse(await fs.readFile(packageJSONPath, "utf8"));
-	packageJSON.version = rootPackageJSON.version;
 	packageJSON.contributes = contributes;
 	await fs.writeFile(
 		packageJSONPath,
