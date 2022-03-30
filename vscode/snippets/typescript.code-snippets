@@ -32,7 +32,7 @@
     ]
   },
   "Prismic Route Resolver Scaffold": {
-    "scope": "javascript,typescript",
+    "scope": "typescript",
     "prefix": "prismicRouteResolverScaffold",
     "description": "Yields a ready-to-use Route Resolver scaffold",
     "body": [

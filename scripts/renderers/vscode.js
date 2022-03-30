@@ -16,43 +16,44 @@ const PASSTHROUGH_FILES = ["README.md", "CHANGELOG.md", "LICENSE"];
 
 const renderSnippet = (snippet) => {
 	return {
-		scope: snippet.scope.join(","),
+		scope: snippet.scope,
 		prefix: snippet.prefix,
 		description: snippet.description,
 		body: snippet.body.split("\n"),
 	};
 };
 
-export const render = async (snippets) => {
-	await fs.rm(SNIPPETS_DIR, { recursive: true });
-	fs.mkdir(SNIPPETS_DIR);
-
-	const snippetFiles = snippets.reduce((acc, snippet) => {
-		const renderedSnippet = renderSnippet(snippet);
+const getSnippetFiles = (snippets) => {
+	return snippets.reduce((acc, snippet) => {
 		snippet.scope
 			.map((scope) => scope.toLowerCase())
 			.forEach((scope) => {
 				acc[scope] ||= {};
 
-				acc[scope][snippet.name] = renderedSnippet;
+				acc[scope][snippet.name] = renderSnippet({ ...snippet, scope });
 			});
 
 		return acc;
 	}, {});
+};
 
-	await Promise.all(
+const writeSnippetFiles = (snippetFiles) => {
+	return Promise.all(
 		Object.entries(snippetFiles).map(([language, body]) => {
 			const filePath = path.join(SNIPPETS_DIR, `${language}.code-snippets`);
 			debug(
 				"Writting %o with %o snippets",
-				filePath.replace(OUTPUT_DIR, "").replace(/\\/g, "/"),
+				filePath.replace(OUTPUT_DIR, "").replace(/\\/g, "/").replace(/^\//, ""),
 				Object.keys(body).length,
 			);
 
 			return fs.writeFile(filePath, JSON.stringify(body, null, 2));
 		}),
 	);
+};
 
+const updatePackageJSON = async (snippetFiles) => {
+	debug("Updating %o", "package.json");
 	const contributes = {
 		snippets: Object.keys(snippetFiles).map((language) => {
 			return {
@@ -61,8 +62,6 @@ export const render = async (snippets) => {
 			};
 		}),
 	};
-
-	debug("Updating %o", "package.json");
 	const rootPackageJSONPath = path.join(ROOT_DIR, "./package.json");
 	const rootPackageJSON = JSON.parse(
 		await fs.readFile(rootPackageJSONPath, "utf8"),
@@ -77,6 +76,18 @@ export const render = async (snippets) => {
 		"utf8",
 	);
 	debug("%o updated!", "package.json");
+};
+
+export const render = async (snippets) => {
+	await fs.rm(SNIPPETS_DIR, { recursive: true });
+	fs.mkdir(SNIPPETS_DIR);
+
+	const snippetFiles = getSnippetFiles(snippets);
+
+	await Promise.all([
+		writeSnippetFiles(snippetFiles),
+		updatePackageJSON(snippetFiles),
+	]);
 
 	debug("Copying %o", PASSTHROUGH_FILES);
 	await Promise.all(

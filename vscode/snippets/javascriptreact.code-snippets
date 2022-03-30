@@ -1,6 +1,6 @@
 {
   "Prismic Group": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicGroup",
     "description": "Yields a ready-to-use Group field/Slice repeatable template",
     "body": [
@@ -12,7 +12,7 @@
     ]
   },
   "Prismic Link": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicLink",
     "description": "Yields a ready-to-use `<PrismicLink />` component",
     "body": [
@@ -22,7 +22,7 @@
     ]
   },
   "Prismic Provider": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicProvider",
     "description": "Yields a ready-to-use `<PrismicProvider />` component",
     "body": [
@@ -32,7 +32,7 @@
     ]
   },
   "Prismic Rich Text": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicRichText",
     "description": "Yields a ready-to-use `<PrismicRichText />` component",
     "body": [
@@ -55,7 +55,7 @@
     ]
   },
   "Prismic Slice Simulator Scaffold": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicSliceSimulatorScaffold",
     "description": "Yields a ready-to-use Slice Simulator scaffold",
     "body": [
@@ -81,7 +81,7 @@
     ]
   },
   "Prismic SliceZone": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicSliceZone",
     "description": "Yields a ready-to-use `<SliceZone />` component",
     "body": [
@@ -89,7 +89,7 @@
     ]
   },
   "Prismic Text": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicText",
     "description": "Yields a ready-to-use `<PrismicText />` component",
     "body": [
@@ -97,7 +97,7 @@
     ]
   },
   "Prismic Toolbar": {
-    "scope": "javascriptreact,typescriptreact",
+    "scope": "javascriptreact",
     "prefix": "prismicToolbar",
     "description": "Yields a ready-to-use `<PrismicToolbar />` component",
     "body": [

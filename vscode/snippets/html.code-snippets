@@ -1,6 +1,6 @@
 {
   "Prismic Embed": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicEmbed",
     "description": "Yields a ready-to-use `<PrismicEmbed />` component",
     "body": [
@@ -8,7 +8,7 @@
     ]
   },
   "Prismic Group": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicGroup",
     "description": "Yields a ready-to-use Group field/Slice repeatable template",
     "body": [
@@ -18,7 +18,7 @@
     ]
   },
   "Prismic Image": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicImage",
     "description": "Yields a ready-to-use `<PrismicImage />` component",
     "body": [
@@ -26,7 +26,7 @@
     ]
   },
   "Prismic Link": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicLink",
     "description": "Yields a ready-to-use `<PrismicLink />` component",
     "body": [
@@ -36,7 +36,7 @@
     ]
   },
   "Prismic Rich Text": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicRichText",
     "description": "Yields a ready-to-use `<PrismicRichText />` component",
     "body": [
@@ -44,7 +44,7 @@
     ]
   },
   "Prismic SliceZone": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicSliceZone",
     "description": "Yields a ready-to-use `<SliceZone />` component",
     "body": [
@@ -52,7 +52,7 @@
     ]
   },
   "Prismic Text": {
-    "scope": "vue-html,html",
+    "scope": "html",
     "prefix": "prismicText",
     "description": "Yields a ready-to-use `<PrismicText />` component",
     "body": [
