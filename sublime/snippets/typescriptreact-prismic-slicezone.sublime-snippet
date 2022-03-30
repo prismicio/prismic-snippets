@@ -4,5 +4,5 @@
 ]]></content>
 	<tabTrigger>prismicSliceZone</tabTrigger>
 	<scope>source.tsx</scope>
-	<description>Yields a ready-to-use `<SliceZone />` component</description>
+	<description>Yields a ready-to-use `&lt;SliceZone /&gt;` component</description>
 </snippet>

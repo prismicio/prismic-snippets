@@ -4,5 +4,5 @@
 ]]></content>
 	<tabTrigger>prismicEmbed</tabTrigger>
 	<scope>text.html.vue</scope>
-	<description>Yields a ready-to-use `<PrismicEmbed />` component</description>
+	<description>Yields a ready-to-use `&lt;PrismicEmbed /&gt;` component</description>
 </snippet>

@@ -4,5 +4,5 @@
 ]]></content>
 	<tabTrigger>prismicRichText</tabTrigger>
 	<scope>source.jsx</scope>
-	<description>Yields a ready-to-use `<PrismicRichText />` component</description>
+	<description>Yields a ready-to-use `&lt;PrismicRichText /&gt;` component</description>
 </snippet>

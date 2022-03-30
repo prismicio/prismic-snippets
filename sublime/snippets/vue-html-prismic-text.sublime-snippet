@@ -4,5 +4,5 @@
 ]]></content>
 	<tabTrigger>prismicText</tabTrigger>
 	<scope>text.html.vue</scope>
-	<description>Yields a ready-to-use `<PrismicText />` component</description>
+	<description>Yields a ready-to-use `&lt;PrismicText /&gt;` component</description>
 </snippet>

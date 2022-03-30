@@ -4,5 +4,5 @@
 ]]></content>
 	<tabTrigger>prismicToolbar</tabTrigger>
 	<scope>source.jsx</scope>
-	<description>Yields a ready-to-use `<PrismicToolbar />` component</description>
+	<description>Yields a ready-to-use `&lt;PrismicToolbar /&gt;` component</description>
 </snippet>

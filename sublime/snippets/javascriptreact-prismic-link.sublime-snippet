@@ -6,5 +6,5 @@
 ]]></content>
 	<tabTrigger>prismicLink</tabTrigger>
 	<scope>source.jsx</scope>
-	<description>Yields a ready-to-use `<PrismicLink />` component</description>
+	<description>Yields a ready-to-use `&lt;PrismicLink /&gt;` component</description>
 </snippet>

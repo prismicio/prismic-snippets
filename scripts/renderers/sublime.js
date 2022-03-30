@@ -31,7 +31,9 @@ ${snippet.body}
 ]]></content>
 	<tabTrigger>${snippet.prefix}</tabTrigger>
 	<scope>${SCOPE_MAP[snippet.scope]}</scope>
-	<description>${snippet.description}</description>
+	<description>${snippet.description
+		.replace(/</g, "&lt;")
+		.replace(/>/g, "&gt;")}</description>
 </snippet>`.replace(regexpMagic, "\\$1$2$3");
 };
 
