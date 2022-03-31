@@ -152,11 +152,11 @@ For more clarity on this project and its structure you can also check out the de
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/prismicio-snippets/latest.svg
-[npm-version-href]: https://npmjs.com/package/prismicio-snippets
+[npm-version-src]: https://img.shields.io/npm/v/prismic-snippets/latest.svg
+[npm-version-href]: https://npmjs.com/package/prismic-snippets
 [github-actions-ci-src]: https://github.com/prismicio/prismic-snippets/workflows/ci/badge.svg
 [github-actions-ci-href]: https://github.com/prismicio/prismic-snippets/actions?query=workflow%3Aci
 [conventional-commits-src]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [conventional-commits-href]: https://conventionalcommits.org
-[license-src]: https://img.shields.io/npm/l/prismicio-snippets.svg
-[license-href]: https://npmjs.com/package/prismicio-snippets
+[license-src]: https://img.shields.io/npm/l/prismic-snippets.svg
+[license-href]: https://npmjs.com/package/prismic-snippets
