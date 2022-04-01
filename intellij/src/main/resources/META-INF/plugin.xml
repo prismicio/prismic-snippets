@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.prismicio.snippets</id>
     <name>Prismic.io snippets</name>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <vendor url="https://prismic.io" email="contact@prismic.io">prismicio</vendor>
     <description><![CDATA[
 For full details of the available snippet, please visit the <a href="https://github.com/prismicio/prismic-snippets#readme">GitHub repository</a>

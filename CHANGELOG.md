@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/prismicio/prismic-snippets/compare/v0.0.6...v0.0.7) (2022-04-01)
+
+
+### Features
+
+* **intellij:** support intellij ([48655c2](https://github.com/prismicio/prismic-snippets/commit/48655c2b2cbfd40261dea0d6d7c58b48505cde6a))
+
+
+### Chore
+
+* rename NPM package ([5a9e55c](https://github.com/prismicio/prismic-snippets/commit/5a9e55c7e63d343b368c0a3b089840a2fe884777))
+* rename vscode/vim package ([e0e2f8e](https://github.com/prismicio/prismic-snippets/commit/e0e2f8e25255b9d800b9568cc1d79fa16a888313))
+
 ### [0.0.6](https://github.com/prismicio/prismic-snippets/compare/v0.0.5...v0.0.6) (2022-03-30)
 
 
