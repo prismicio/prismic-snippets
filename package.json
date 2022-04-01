@@ -20,10 +20,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "cross-env DEBUG=* node --experimental-json-modules scripts/dev",
-		"build": "cross-env DEBUG=* node --experimental-json-modules scripts/build",
+		"build": "cross-env DEBUG=* node --experimental-json-modules scripts/build && npm run build  --workspaces --if-present",
 		"format": "prettier --write .",
 		"prepare": "npm run build",
-		"release": "npm run test && standard-version && git push --follow-tags && npm run build && npm run release -w vscode",
+		"release": "npm run test && standard-version && git push --follow-tags && npm run build && npm run release --workspaces --if-present",
 		"release:dry": "standard-version --dry-run",
 		"lint": "eslint --ext .js,.ts .",
 		"unit": "echo \"no unit test\"",
@@ -34,11 +34,12 @@
 		"node": ">=16.10.0"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.16.0",
-		"@typescript-eslint/parser": "^5.16.0",
+		"@typescript-eslint/eslint-plugin": "^5.17.0",
+		"@typescript-eslint/parser": "^5.17.0",
 		"chokidar": "3.5.3",
 		"cross-env": "7.0.3",
 		"debug": "4.3.4",
+		"escape-html": "1.0.3",
 		"eslint": "^8.12.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.0.0",
@@ -46,10 +47,11 @@
 		"front-matter": "4.0.2",
 		"globby": "11.1.0",
 		"prettier": "^2.6.1",
-		"prettier-plugin-jsdoc": "^0.3.33",
+		"prettier-plugin-jsdoc": "^0.3.36",
 		"standard-version": "^9.3.2"
 	},
 	"workspaces": [
+		"intellij",
 		"vscode"
 	]
 }

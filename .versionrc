@@ -11,6 +11,14 @@
 		{
 			"filename": "vscode/package.json",
 			"type": "json"
+		},
+		{
+			"filename": "intellij/build.gradle",
+			"updater": "intellij/bump-gradle.js"
+		},
+		{
+			"filename": "intellij/src/main/resources/META-INF/plugin.xml",
+			"updater": "intellij/bump-plugin.js"
 		}
 	],
 	"types": [

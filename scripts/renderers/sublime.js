@@ -5,6 +5,8 @@ import url from "node:url";
 import { default as _debug } from "debug";
 const debug = _debug("renderer:sublime");
 
+import escapeHTML from "escape-html";
+
 import { mkNewDir } from "./utils.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
@@ -23,7 +25,7 @@ const SCOPE_MAP = {
 };
 
 const renderSnippet = (snippet) => {
-	const regexpMagic = /(\$)([a-z(]+)([^$])/gi;
+	const regexMagic = /(\$)([a-z(]+)([^$])/gi;
 
 	return /* xml */ `<snippet>
 	<content><![CDATA[
@@ -31,10 +33,8 @@ ${snippet.body}
 ]]></content>
 	<tabTrigger>${snippet.prefix}</tabTrigger>
 	<scope>${SCOPE_MAP[snippet.scope]}</scope>
-	<description>${snippet.description
-		.replace(/</g, "&lt;")
-		.replace(/>/g, "&gt;")}</description>
-</snippet>`.replace(regexpMagic, "\\$1$2$3");
+	<description>${escapeHTML(snippet.description)}</description>
+</snippet>`.replace(regexMagic, "\\$1$2$3");
 };
 
 const getSnippetFiles = (snippets) => {

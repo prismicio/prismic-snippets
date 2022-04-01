@@ -8,13 +8,13 @@ const debug = _debug("process");
 import fm from "front-matter";
 import globby from "globby";
 
-import { sublime, vscode } from "./renderers/index.js";
+import { intellij, sublime, vscode } from "./renderers/index.js";
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 // Config
 const SRC_DIR = path.join(__dirname, "../src");
-const RENDERERS = [sublime, vscode];
+const RENDERERS = [intellij, sublime, vscode];
 
 // Helpers
 const getSnippetFiles = () => {

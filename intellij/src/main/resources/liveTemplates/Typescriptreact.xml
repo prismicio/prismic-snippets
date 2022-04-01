@@ -1,0 +1,117 @@
+<templateSet group="Typescriptreact">
+	<template
+	name="prismicGroup"
+	value="{$1$.map(($2$) =&gt; (&#10;	&lt;$3$ key={$2$}&gt;&#10;		{{ $2$ }}$4$&#10;	&lt;/$3$&gt;&#10;))}"
+	description="Yields a ready-to-use Group field/Slice repeatable template"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;slice.items&quot;)" defaultValue="slice.items" alwaysStopAt="true"/>
+	<variable name="2" expression="enum(&quot;item&quot;)" defaultValue="item" alwaysStopAt="true"/>
+	<variable name="3" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+	<variable name="4" expression="" defaultValue="" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicLink"
+	value="&lt;PrismicLink field={$1$}&gt;&#10;	$2$&#10;&lt;/PrismicLink&gt;"
+	description="Yields a ready-to-use `&lt;PrismicLink /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+	<variable name="2" expression="" defaultValue="" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicProvider"
+	value="&lt;PrismicProvider client={$1$}&gt;&#10;	{children}$2$&#10;&lt;/PrismicProvider&gt;"
+	description="Yields a ready-to-use `&lt;PrismicProvider /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;client&quot;)" defaultValue="client" alwaysStopAt="true"/>
+	<variable name="2" expression="" defaultValue="" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicRichText"
+	value="&lt;PrismicRichText field={$1$} /&gt;"
+	description="Yields a ready-to-use `&lt;PrismicRichText /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicSliceScaffold"
+	value="import { SliceComponentProps } from &quot;@prismicio/react&quot;;&#10;&#10;export default function $1$({ slice }: SliceComponentProps) {&#10;  return ($2$);&#10;};"
+	description="Yields a ready-to-use Slice components scaffold"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;SliceName&quot;)" defaultValue="SliceName" alwaysStopAt="true"/>
+	<variable name="2" expression="" defaultValue="" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicSliceSimulatorScaffold"
+	value="import { SliceSimulator } from &quot;@prismicio/slice-simulator-react&quot;;&#10;import { SliceZone } from &quot;@prismicio/react&quot;;&#10;&#10;import state from &quot;../.slicemachine/libraries-state.json&quot;;&#10;// A component map mapping Prismic slice types to React components&#10;import { components } from &quot;$1$&quot;;&#10;&#10;const SliceSimulatorPage = () =&gt; {&#10;  return (&#10;    &lt;SliceSimulator&#10;      sliceZone={({ slices }) =&gt; (&#10;        &lt;SliceZone slices={slices} components={components} /&gt;&#10;      )}&#10;      state={state}&#10;    /&gt;&#10;  );&#10;};&#10;&#10;export default SliceSimulatorPage;"
+	description="Yields a ready-to-use Slice Simulator scaffold"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;../slices/components&quot;)" defaultValue="../slices/components" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicSliceZone"
+	value="&lt;SliceZone slices={$1$} components={$2$} /&gt;"
+	description="Yields a ready-to-use `&lt;SliceZone /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;doc.data.body&quot;)" defaultValue="doc.data.body" alwaysStopAt="true"/>
+	<variable name="2" expression="enum(&quot;components&quot;)" defaultValue="components" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicText"
+	value="&lt;PrismicText field={$1$} /&gt;"
+	description="Yields a ready-to-use `&lt;PrismicText /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+<template
+	name="prismicToolbar"
+	value="&lt;PrismicToolbar repositoryName=&quot;$1$&quot; /&gt;"
+	description="Yields a ready-to-use `&lt;PrismicToolbar /&gt;` component"
+	toReformat="true"
+	toShortenFQNames="true"
+>
+	<variable name="1" expression="enum(&quot;repo-name&quot;)" defaultValue="repo-name" alwaysStopAt="true"/>
+	<context>
+		<option name="TYPESCRIPTREACT" value="true"/>
+	</context>
+</template>
+</templateSet>

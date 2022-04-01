@@ -9,6 +9,12 @@ vscode/README.md
 vscode/CHANGELOG.md
 vscode/LICENSE
 
+# intellij
+.idea
+.gradle
+gradle
+intellij/build
+
 # os
 .DS_Store
 ._*

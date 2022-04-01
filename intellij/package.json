@@ -1,0 +1,21 @@
+{
+	"name": "@prismicio/snippets.intellij",
+	"version": "0.0.6",
+	"description": "Prismic snippets for VS Code and Vim",
+	"private": true,
+	"keywords": [
+		"prismic",
+		"intellij"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/prismicio/prismic-snippets.git",
+		"directory": "intellij"
+	},
+	"license": "Apache-2.0",
+	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
+	"scripts": {
+		"build": "gradle buildPlugin",
+		"release": "gradle publishPlugin"
+	}
+}

@@ -22,3 +22,7 @@ export const copy = async (name, inputDir, outputDir, throwOnError = false) => {
 		}
 	}
 };
+
+export const ucFirst = (str) => {
+	return `${str.charAt(0).toUpperCase()}${str.slice(1)}`;
+};

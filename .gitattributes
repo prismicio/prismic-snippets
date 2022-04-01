@@ -15,11 +15,14 @@ yarn.lock -diff
 # custom
 
 # ignore generated files
+intellij/src/main/resources/liveTemplates/* -diff
 sublime/snippets/* -diff
 vscode/snippets/* -diff
 
 # ignore from exports
 .github export-ignore
 .vscode export-ignore
+intellij export-ignore
 scripts export-ignore
 src export-ignore
+vscode export-ignore

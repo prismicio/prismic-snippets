@@ -55,7 +55,7 @@ Install package from [Package Control][sublime-package-control-src].
 
 ### IntelliJ
 
-:construction:
+Intall plugin from [JetBrains Marketplace][jetbrains-marketplace-src].
 
 ## Documentation
 
@@ -142,6 +142,7 @@ For more clarity on this project and its structure you can also check out the de
 [vs-code-marketplace-src]: https://marketplace.visualstudio.com/items?itemName=prismicio.prismic-snippets
 [coc-nvim-src]: https://github.com/neoclide/coc.nvim
 [sublime-package-control-src]: https://packagecontrol.io/packages/Prismic.io%20snippets
+[jetbrains-marketplace-src]: https://plugins.jetbrains.com/plugin/18884-prismic-io-snippets
 
 <!-- TODO: Replace link with a more useful one if available -->
 
