@@ -1,7 +1,7 @@
 ---
 name: "Prismic Image"
 description: "Yields a ready-to-use `<PrismicImage />` component"
-# scope: ["javascriptreact", "typescriptreact"]
+# scope: ["javascript", "javascriptreact", "typescriptreact"]
 scope: [] # empty for now
 prefix: "prismicImage"
 ---

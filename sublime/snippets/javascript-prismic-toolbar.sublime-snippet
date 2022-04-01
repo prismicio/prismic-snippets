@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<PrismicToolbar repositoryName="${1:repo-name}" />
+]]></content>
+	<tabTrigger>prismicToolbar</tabTrigger>
+	<scope>source.js</scope>
+	<description>Yields a ready-to-use `&lt;PrismicToolbar /&gt;` component</description>
+</snippet>

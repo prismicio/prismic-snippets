@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+export default function ${1:SliceName}(
+	/**
+	 * @type {import("@prismicio/react").SliceComponentProps}
+	 */
+	{ slice }
+) {
+  return (${2});
+};
+]]></content>
+	<tabTrigger>prismicSliceScaffold</tabTrigger>
+	<scope>source.js</scope>
+	<description>Yields a ready-to-use Slice components scaffold</description>
+</snippet>

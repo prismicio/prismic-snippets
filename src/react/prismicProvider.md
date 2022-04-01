@@ -1,7 +1,7 @@
 ---
 name: "Prismic Provider"
 description: "Yields a ready-to-use `<PrismicProvider />` component"
-scope: ["javascriptreact", "typescriptreact"]
+scope: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicProvider"
 ---
 

@@ -20,10 +20,10 @@ For full details of the available snippet, please visit the <a href="https://git
 		<!--PRISMIC-->
 		<defaultLiveTemplates file="/liveTemplates/Typescript.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Javascript.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Javascriptreact.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Typescriptreact.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Vue-html.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Vue.xml"/>
+		<defaultLiveTemplates file="/liveTemplates/Javascriptreact.xml"/>
+		<defaultLiveTemplates file="/liveTemplates/Typescriptreact.xml"/>
 		<!--ENDPRISMIC-->
 	</extensions>
 </idea-plugin>

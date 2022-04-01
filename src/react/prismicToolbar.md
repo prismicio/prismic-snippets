@@ -1,7 +1,7 @@
 ---
 name: "Prismic Toolbar"
 description: "Yields a ready-to-use `<PrismicToolbar />` component"
-scope: ["javascriptreact", "typescriptreact"]
+scope: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicToolbar"
 ---
 

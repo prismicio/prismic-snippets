@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<PrismicLink field={${1:doc.data.field}}>
+	${2}
+</PrismicLink>
+]]></content>
+	<tabTrigger>prismicLink</tabTrigger>
+	<scope>source.js</scope>
+	<description>Yields a ready-to-use `&lt;PrismicLink /&gt;` component</description>
+</snippet>

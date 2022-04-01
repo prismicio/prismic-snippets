@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<PrismicRichText field={${1:doc.data.field}} />
+]]></content>
+	<tabTrigger>prismicRichText</tabTrigger>
+	<scope>source.js</scope>
+	<description>Yields a ready-to-use `&lt;PrismicRichText /&gt;` component</description>
+</snippet>

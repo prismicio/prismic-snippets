@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<SliceZone slices={${1:doc.data.body}} components={${2:components}} />
+]]></content>
+	<tabTrigger>prismicSliceZone</tabTrigger>
+	<scope>source.js</scope>
+	<description>Yields a ready-to-use `&lt;SliceZone /&gt;` component</description>
+</snippet>

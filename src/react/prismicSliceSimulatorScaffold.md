@@ -1,7 +1,7 @@
 ---
 name: "Prismic Slice Simulator Scaffold"
 description: "Yields a ready-to-use Slice Simulator scaffold"
-scope: ["javascriptreact", "typescriptreact"]
+scope: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicSliceSimulatorScaffold"
 ---
 
