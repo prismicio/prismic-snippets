@@ -1,6 +1,6 @@
 {
 	"name": "@prismicio/snippets",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "Prismic snippets for VS Code, Vim, Sublime, and IntelliJ",
 	"private": true,
 	"keywords": [

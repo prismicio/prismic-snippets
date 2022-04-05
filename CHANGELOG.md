@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.8](https://github.com/prismicio/prismic-snippets/compare/v0.0.7...v0.0.8) (2022-04-05)
+
+
+### Bug Fixes
+
+* use react snippets on javascript files also ([60a697b](https://github.com/prismicio/prismic-snippets/commit/60a697be6074aa52d9826bc74684a86e0c796c8d))
+
+
+### Documentation
+
+* add plugin description ([aa11958](https://github.com/prismicio/prismic-snippets/commit/aa1195890c6cac107a4e6c7c4ca37da6d00fea81))
+
 ### [0.0.7](https://github.com/prismicio/prismic-snippets/compare/v0.0.6...v0.0.7) (2022-04-01)
 
 

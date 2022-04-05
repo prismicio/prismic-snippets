@@ -2,7 +2,7 @@
 <idea-plugin>
     <id>com.prismicio.snippets</id>
     <name>Prismic.io snippets</name>
-    <version>0.0.7</version>
+    <version>0.0.8</version>
     <vendor url="https://prismic.io" email="contact@prismic.io">prismicio</vendor>
     <description><![CDATA[
 <a href="https://prismic.io?utm_campaign=devexp&utm_source=jetbrain&utm_medium=home">Prismic.io</a> snippets for IntelliJ IDEs.<br /><ol><li>📐 &nbsp;Template quickly Prismic data in React and Vue.js;</li><li>🏗 &nbsp;Scaffold common Prismic structures in a blink: slices, resolvers, and more;</li><li>🈂 &nbsp;JavaScript and TypeScript friendly.</li></ol>
@@ -18,10 +18,10 @@
         <liveTemplateContext implementation="com.prismicio.snippets.VueContext"/>
         <liveTemplateContext implementation="com.prismicio.snippets.VueHTMLContext"/>
         <!--PRISMIC-->
-		<defaultLiveTemplates file="/liveTemplates/Typescript.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Javascript.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Javascriptreact.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Typescriptreact.xml"/>
+		<defaultLiveTemplates file="/liveTemplates/Typescript.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Vue-html.xml"/>
 		<defaultLiveTemplates file="/liveTemplates/Vue.xml"/>
 		<!--ENDPRISMIC-->
