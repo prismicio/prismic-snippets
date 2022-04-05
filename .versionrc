@@ -9,6 +9,10 @@
 			"type": "json"
 		},
 		{
+			"filename": "intellij/package.json",
+			"type": "json"
+		},
+		{
 			"filename": "vscode/package.json",
 			"type": "json"
 		},
