@@ -97,6 +97,7 @@ const writeSnippetFiles = (snippetFiles) => {
 const updatePluginXML = async (snippetFiles) => {
 	debug("Updating %o", "plugin.xml");
 	const extensions = Object.keys(snippetFiles)
+		.sort()
 		.map((name) => `<defaultLiveTemplates file="/liveTemplates/${name}.xml"/>`)
 		.join("\n\t\t");
 
