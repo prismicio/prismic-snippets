@@ -35,6 +35,10 @@ Non-breaking space: &nbsp; are here on purpose to fix emoji rendering on certain
 
 -->
 
+- 📐 &nbsp;Template quickly Prismic data in React and Vue.js;
+- 🏗 &nbsp;Scaffold common Prismic structures in a blink: slices, resolvers, and more;
+- 🈂 &nbsp;JavaScript and TypeScript friendly.
+
 ## Install
 
 ### VS Code
