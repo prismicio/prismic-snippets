@@ -17,7 +17,7 @@ TODO: Replace all on all files (README.md, CONTRIBUTING.md, bug_report.md, packa
 [![Conventional Commits][conventional-commits-src]][conventional-commits-href]
 [![License][license-src]][license-href]
 
-⚠ This project is in an experimental state, things might change, a lot!
+> ⚠ This project is in an experimental state, things might change, a lot!
 
 <!-- TODO: Replacing link to Prismic with [Prismic][prismic] is useful here -->
 
