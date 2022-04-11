@@ -1,4 +1,16 @@
 {
+	"Prismic Group": {
+		"scope": "javascript",
+		"prefix": "prismicGroup",
+		"description": "Yields a ready-to-use Group field/Slice repeatable template",
+		"body": [
+			"{${1:slice.items}.map((${2:item}) => (",
+			"\t<${3:div} key={${2:item}}>",
+			"\t\t{{ ${2:item} }}${4}",
+			"\t</${3:div}>",
+			"))}"
+		]
+	},
 	"Prismic HTML Serializer Scaffold": {
 		"scope": "javascript",
 		"prefix": "prismicHTMLSerializerScaffold",
@@ -12,6 +24,16 @@
 			"\theading1: ({ children }) => `<h2>${children}</h2>`,",
 			"\tparagraph: ({ children }) => `<p class=\"fooBar\">${children}</p>`,",
 			"};"
+		]
+	},
+	"Prismic Link": {
+		"scope": "javascript",
+		"prefix": "prismicLink",
+		"description": "Yields a ready-to-use `<PrismicLink />` component",
+		"body": [
+			"<PrismicLink field={${1:doc.data.field}}>",
+			"\t${2}",
+			"</PrismicLink>"
 		]
 	},
 	"Prismic Link Resolver Scaffold": {
@@ -33,44 +55,6 @@
 			"};"
 		]
 	},
-	"Prismic Route Resolver Scaffold": {
-		"scope": "javascript",
-		"prefix": "prismicRouteResolverScaffold",
-		"description": "Yields a ready-to-use Route Resolver scaffold",
-		"body": [
-			"[",
-			"\t{",
-			"\t\ttype: \"${1:page}\",",
-			"\t\tpath: \"${2:path}\",",
-			"\t\t// resolver: {",
-			"\t\t// \tparent: \"${4:parent_page}\",",
-			"\t\t// }",
-			"\t}",
-			"]"
-		]
-	},
-	"Prismic Group": {
-		"scope": "javascript",
-		"prefix": "prismicGroup",
-		"description": "Yields a ready-to-use Group field/Slice repeatable template",
-		"body": [
-			"{${1:slice.items}.map((${2:item}) => (",
-			"\t<${3:div} key={${2:item}}>",
-			"\t\t{{ ${2:item} }}${4}",
-			"\t</${3:div}>",
-			"))}"
-		]
-	},
-	"Prismic Link": {
-		"scope": "javascript",
-		"prefix": "prismicLink",
-		"description": "Yields a ready-to-use `<PrismicLink />` component",
-		"body": [
-			"<PrismicLink field={${1:doc.data.field}}>",
-			"\t${2}",
-			"</PrismicLink>"
-		]
-	},
 	"Prismic Provider": {
 		"scope": "javascript",
 		"prefix": "prismicProvider",
@@ -87,6 +71,22 @@
 		"description": "Yields a ready-to-use `<PrismicRichText />` component",
 		"body": [
 			"<PrismicRichText field={${1:doc.data.field}} />"
+		]
+	},
+	"Prismic Route Resolver Scaffold": {
+		"scope": "javascript",
+		"prefix": "prismicRouteResolverScaffold",
+		"description": "Yields a ready-to-use Route Resolver scaffold",
+		"body": [
+			"[",
+			"\t{",
+			"\t\ttype: \"${1:page}\",",
+			"\t\tpath: \"${2:path}\",",
+			"\t\t// resolver: {",
+			"\t\t// \tparent: \"${4:parent_page}\",",
+			"\t\t// }",
+			"\t}",
+			"]"
 		]
 	},
 	"Prismic Slice Scaffold": {

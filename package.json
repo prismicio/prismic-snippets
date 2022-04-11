@@ -19,8 +19,8 @@
 	"author": "Prismic <contact@prismic.io> (https://prismic.io)",
 	"type": "module",
 	"scripts": {
-		"dev": "cross-env DEBUG=* schnipsel --watch",
-		"build": "schnipsel && npm run build  --workspaces --if-present",
+		"dev": "schnipsel --watch",
+		"build": "cross-env DEBUG=schnipsel* schnipsel && npm run build  --workspaces --if-present",
 		"format": "prettier --write .",
 		"prepare": "npm run build",
 		"release": "npm run test && standard-version && git push --follow-tags && npm run build && npm run release --workspaces --if-present",
@@ -34,16 +34,16 @@
 		"node": ">=16.10.0"
 	},
 	"devDependencies": {
-		"@typescript-eslint/eslint-plugin": "^5.18.0",
-		"@typescript-eslint/parser": "^5.18.0",
+		"@typescript-eslint/eslint-plugin": "^5.19.0",
+		"@typescript-eslint/parser": "^5.19.0",
 		"cross-env": "7.0.3",
 		"eslint": "^8.13.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.0.0",
 		"eslint-plugin-tsdoc": "^0.2.16",
 		"prettier": "^2.6.2",
-		"prettier-plugin-jsdoc": "^0.3.36",
-		"schnipsel": "file:../schnipsel",
+		"prettier-plugin-jsdoc": "^0.3.38",
+		"schnipsel": "^0.0.2",
 		"standard-version": "^9.3.2"
 	},
 	"workspaces": [

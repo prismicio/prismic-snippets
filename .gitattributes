@@ -24,5 +24,4 @@ vscode/snippets/* -diff
 .vscode export-ignore
 intellij export-ignore
 scripts export-ignore
-src export-ignore
 vscode export-ignore
