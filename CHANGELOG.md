@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/prismicio/prismic-snippets/compare/v0.0.8...v0.0.9) (2022-04-11)
+
+
+### Refactor
+
+* migrate to schnipsel ([12cb255](https://github.com/prismicio/prismic-snippets/commit/12cb2551554ef97d7a81905c8d4c7eba3028ca7a))
+
+
+### Chore
+
+* **deps:** maintain dependencies ([8de9b67](https://github.com/prismicio/prismic-snippets/commit/8de9b673e5b94567adcc0d3225302d3dbbae634b))
+* **deps:** maintain dependencies ([e87cefd](https://github.com/prismicio/prismic-snippets/commit/e87cefdc67af93c82ab2e2a73987e3cd6ae4a1c4))
+* **intellij:** sort plugin.xml updates ([f3940c3](https://github.com/prismicio/prismic-snippets/commit/f3940c30e424dbc5effada080601b40e7d280db4))
+
+
+### Documentation
+
+* **intellij:** typo ([378a04e](https://github.com/prismicio/prismic-snippets/commit/378a04e6b1325fcd8157a8cb03f810a993c27ba6))
+* style ([0c72ace](https://github.com/prismicio/prismic-snippets/commit/0c72ace8da81330c62cbd9f37eb5036e13769f90))
+
 ### [0.0.8](https://github.com/prismicio/prismic-snippets/compare/v0.0.7...v0.0.8) (2022-04-05)
 
 
