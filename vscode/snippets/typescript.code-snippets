@@ -1,50 +1,50 @@
 {
-  "Prismic HTML Serializer Scaffold": {
-    "scope": "typescript",
-    "prefix": "prismicHTMLSerializerScaffold",
-    "description": "Yields a ready-to-use HTML Serializer scaffold",
-    "body": [
-      "import * as prismicH from \"@prismicio/helpers\";",
-      "",
-      "const htmlSerializer: prismicH.HTMLMapSerializer = {",
-      "\t// Those are just examples, update them and add your own~",
-      "\theading1: ({ children }) => `<h2>${children}</h2>`,",
-      "\tparagraph: ({ children }) => `<p class=\"fooBar\">${children}</p>`,",
-      "};"
-    ]
-  },
-  "Prismic Link Resolver Scaffold": {
-    "scope": "typescript",
-    "prefix": "prismicLinkResolverScaffold",
-    "description": "Yields a ready-to-use Link Resolver scaffold",
-    "body": [
-      "import * as prismicH from \"@prismicio/helpers\";",
-      "",
-      "const linkResolver: prismicH.LinkResolverFunction<string | undefined> = (doc) => {",
-      "\tif (doc.isBroken) {",
-      "\t\treturn \"/404\";",
-      "\t}",
-      "",
-      "\tif (doc.type === \"${1:page}\") {",
-      "\t\treturn `/${${2:doc.uid}}`;",
-      "\t}",
-      "};"
-    ]
-  },
-  "Prismic Route Resolver Scaffold": {
-    "scope": "typescript",
-    "prefix": "prismicRouteResolverScaffold",
-    "description": "Yields a ready-to-use Route Resolver scaffold",
-    "body": [
-      "[",
-      "\t{",
-      "\t\ttype: \"${1:page}\",",
-      "\t\tpath: \"${2:path}\",",
-      "\t\t// resolver: {",
-      "\t\t// \tparent: \"${4:parent_page}\",",
-      "\t\t// }",
-      "\t}",
-      "]"
-    ]
-  }
+	"Prismic HTML Serializer Scaffold": {
+		"scope": "typescript",
+		"prefix": "prismicHTMLSerializerScaffold",
+		"description": "Yields a ready-to-use HTML Serializer scaffold",
+		"body": [
+			"import * as prismicH from \"@prismicio/helpers\";",
+			"",
+			"const htmlSerializer: prismicH.HTMLMapSerializer = {",
+			"\t// Those are just examples, update them and add your own~",
+			"\theading1: ({ children }) => `<h2>${children}</h2>`,",
+			"\tparagraph: ({ children }) => `<p class=\"fooBar\">${children}</p>`,",
+			"};"
+		]
+	},
+	"Prismic Link Resolver Scaffold": {
+		"scope": "typescript",
+		"prefix": "prismicLinkResolverScaffold",
+		"description": "Yields a ready-to-use Link Resolver scaffold",
+		"body": [
+			"import * as prismicH from \"@prismicio/helpers\";",
+			"",
+			"const linkResolver: prismicH.LinkResolverFunction<string | undefined> = (doc) => {",
+			"\tif (doc.isBroken) {",
+			"\t\treturn \"/404\";",
+			"\t}",
+			"",
+			"\tif (doc.type === \"${1:page}\") {",
+			"\t\treturn `/${${2:doc.uid}}`;",
+			"\t}",
+			"};"
+		]
+	},
+	"Prismic Route Resolver Scaffold": {
+		"scope": "typescript",
+		"prefix": "prismicRouteResolverScaffold",
+		"description": "Yields a ready-to-use Route Resolver scaffold",
+		"body": [
+			"[",
+			"\t{",
+			"\t\ttype: \"${1:page}\",",
+			"\t\tpath: \"${2:path}\",",
+			"\t\t// resolver: {",
+			"\t\t// \tparent: \"${4:parent_page}\",",
+			"\t\t// }",
+			"\t}",
+			"]"
+		]
+	}
 }

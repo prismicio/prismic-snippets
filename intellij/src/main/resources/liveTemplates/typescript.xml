@@ -1,0 +1,40 @@
+<templateSet group="typescript">
+	<template
+		name="prismicHTMLSerializerScaffold"
+		value="import * as prismicH from &quot;@prismicio/helpers&quot;;&#10;&#10;const htmlSerializer: prismicH.HTMLMapSerializer = {&#10;	// Those are just examples, update them and add your own~&#10;	heading1: ({ children }) =&gt; `&lt;h2&gt;${children}&lt;/h2&gt;`,&#10;	paragraph: ({ children }) =&gt; `&lt;p class=&quot;fooBar&quot;&gt;${children}&lt;/p&gt;`,&#10;};"
+		description="Yields a ready-to-use HTML Serializer scaffold"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<context>
+			<option name="TYPESCRIPT" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicLinkResolverScaffold"
+		value="import * as prismicH from &quot;@prismicio/helpers&quot;;&#10;&#10;const linkResolver: prismicH.LinkResolverFunction&lt;string | undefined&gt; = (doc) =&gt; {&#10;	if (doc.isBroken) {&#10;		return &quot;/404&quot;;&#10;	}&#10;&#10;	if (doc.type === &quot;$1$&quot;) {&#10;		return `/${$2$}`;&#10;	}&#10;};"
+		description="Yields a ready-to-use Link Resolver scaffold"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;page&quot;)" defaultValue="page" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;doc.uid&quot;)" defaultValue="doc.uid" alwaysStopAt="true"/>
+		<context>
+			<option name="TYPESCRIPT" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicRouteResolverScaffold"
+		value="[&#10;	{&#10;		type: &quot;$1$&quot;,&#10;		path: &quot;$2$&quot;,&#10;		// resolver: {&#10;		// 	parent: &quot;$4$&quot;,&#10;		// }&#10;	}&#10;]"
+		description="Yields a ready-to-use Route Resolver scaffold"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;page&quot;)" defaultValue="page" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;path&quot;)" defaultValue="path" alwaysStopAt="true"/>
+		<variable name="4" expression="enum(&quot;parent_page&quot;)" defaultValue="parent_page" alwaysStopAt="true"/>
+		<context>
+			<option name="TYPESCRIPT" value="true"/>
+		</context>
+	</template>
+</templateSet>

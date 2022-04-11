@@ -17,13 +17,13 @@
         <liveTemplateContext implementation="com.prismicio.snippets.JSONContext"/>
         <liveTemplateContext implementation="com.prismicio.snippets.VueContext"/>
         <liveTemplateContext implementation="com.prismicio.snippets.VueHTMLContext"/>
-        <!--PRISMIC-->
-		<defaultLiveTemplates file="/liveTemplates/Javascript.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Javascriptreact.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Typescript.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Typescriptreact.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Vue.xml"/>
-		<defaultLiveTemplates file="/liveTemplates/Vue-html.xml"/>
-		<!--ENDPRISMIC-->
+        <!--SCHNIPSEL-->
+        <defaultLiveTemplates file="/liveTemplates/javascript.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/javascriptreact.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/typescript.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/typescriptreact.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/vue-html.xml"/>
+        <defaultLiveTemplates file="/liveTemplates/vue.xml"/>
+        <!--ENDSCHNIPSEL-->
     </extensions>
 </idea-plugin>

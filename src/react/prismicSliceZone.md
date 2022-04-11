@@ -1,7 +1,7 @@
 ---
 name: "Prismic SliceZone"
 description: "Yields a ready-to-use `<SliceZone />` component"
-scope: ["javascript", "javascriptreact", "typescriptreact"]
+scopes: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicSliceZone"
 ---
 

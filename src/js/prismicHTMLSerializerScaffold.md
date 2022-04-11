@@ -1,7 +1,7 @@
 ---
 name: "Prismic HTML Serializer Scaffold"
 description: "Yields a ready-to-use HTML Serializer scaffold"
-scope: ["javascript"]
+scopes: ["javascript"]
 prefix: "prismicHTMLSerializerScaffold"
 ---
 

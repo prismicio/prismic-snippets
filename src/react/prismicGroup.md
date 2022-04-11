@@ -1,7 +1,7 @@
 ---
 name: "Prismic Group"
 description: "Yields a ready-to-use Group field/Slice repeatable template"
-scope: ["javascript", "javascriptreact", "typescriptreact"]
+scopes: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicGroup"
 ---
 

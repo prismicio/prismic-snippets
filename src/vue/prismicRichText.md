@@ -1,7 +1,7 @@
 ---
 name: "Prismic Rich Text"
 description: "Yields a ready-to-use `<PrismicRichText />` component"
-scope: ["vue-html", "html"]
+scopes: ["vue-html", "html"]
 prefix: "prismicRichText"
 ---
 

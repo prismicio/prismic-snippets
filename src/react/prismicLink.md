@@ -1,7 +1,7 @@
 ---
 name: "Prismic Link"
 description: "Yields a ready-to-use `<PrismicLink />` component"
-scope: ["javascript", "javascriptreact", "typescriptreact"]
+scopes: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicLink"
 ---
 

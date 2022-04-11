@@ -1,7 +1,7 @@
 ---
 name: "Prismic Link Resolver Scaffold"
 description: "Yields a ready-to-use Link Resolver scaffold"
-scope: ["typescript"]
+scopes: ["typescript"]
 prefix: "prismicLinkResolverScaffold"
 ---
 

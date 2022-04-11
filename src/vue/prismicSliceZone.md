@@ -1,7 +1,7 @@
 ---
 name: "Prismic SliceZone"
 description: "Yields a ready-to-use `<SliceZone />` component"
-scope: ["vue-html", "html"]
+scopes: ["vue-html", "html"]
 prefix: "prismicSliceZone"
 ---
 

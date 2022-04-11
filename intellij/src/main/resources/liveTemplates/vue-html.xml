@@ -1,0 +1,95 @@
+<templateSet group="vue-html">
+	<template
+		name="prismicEmbed"
+		value="&lt;PrismicEmbed :field=&quot;$1$&quot; wrapper=&quot;$2$&quot; /&gt;"
+		description="Yields a ready-to-use `&lt;PrismicEmbed /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicGroup"
+		value="&lt;$3$ v-for=&quot;$2$ in $1$&quot; :key=&quot;$2$&quot;&gt;&#10;	{{ $2$ }}$4$&#10;&lt;/$3$&gt;"
+		description="Yields a ready-to-use Group field/Slice repeatable template"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;slice.items&quot;)" defaultValue="slice.items" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;item&quot;)" defaultValue="item" alwaysStopAt="true"/>
+		<variable name="3" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+		<variable name="4" expression="" defaultValue="" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicImage"
+		value="&lt;PrismicImage :field=&quot;$1$&quot; /&gt;"
+		description="Yields a ready-to-use `&lt;PrismicImage /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicLink"
+		value="&lt;PrismicLink :field=&quot;$1$&quot;&gt;&#10;	$2$&#10;&lt;/PrismicLink&gt;"
+		description="Yields a ready-to-use `&lt;PrismicLink /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+		<variable name="2" expression="" defaultValue="" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicRichText"
+		value="&lt;PrismicRichText :field=&quot;$1$&quot; wrapper=&quot;$2$&quot; /&gt;"
+		description="Yields a ready-to-use `&lt;PrismicRichText /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicSliceZone"
+		value="&lt;SliceZone :slices=&quot;$1$&quot; :components=&quot;$2$&quot; wrapper=&quot;$3$&quot; /&gt;"
+		description="Yields a ready-to-use `&lt;SliceZone /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.body&quot;)" defaultValue="doc.data.body" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;components&quot;)" defaultValue="components" alwaysStopAt="true"/>
+		<variable name="3" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+	<template
+		name="prismicText"
+		value="&lt;PrismicText :field=&quot;$1$&quot; wrapper=&quot;$2$&quot; /&gt;"
+		description="Yields a ready-to-use `&lt;PrismicText /&gt;` component"
+		toReformat="true"
+		toShortenFQNames="true"
+	>
+		<variable name="1" expression="enum(&quot;doc.data.field&quot;)" defaultValue="doc.data.field" alwaysStopAt="true"/>
+		<variable name="2" expression="enum(&quot;div&quot;)" defaultValue="div" alwaysStopAt="true"/>
+		<context>
+			<option name="VUEHTML" value="true"/>
+		</context>
+	</template>
+</templateSet>

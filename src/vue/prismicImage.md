@@ -1,7 +1,7 @@
 ---
 name: "Prismic Image"
 description: "Yields a ready-to-use `<PrismicImage />` component"
-scope: ["vue-html", "html"]
+scopes: ["vue-html", "html"]
 prefix: "prismicImage"
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: "Prismic Slice Simulator Scaffold"
 description: "Yields a ready-to-use Slice Simulator scaffold"
-scope: ["vue"]
+scopes: ["vue"]
 prefix: "prismicSliceSimulatorScaffold"
 ---
 

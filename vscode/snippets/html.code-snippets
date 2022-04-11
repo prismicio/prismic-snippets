@@ -1,62 +1,62 @@
 {
-  "Prismic Embed": {
-    "scope": "html",
-    "prefix": "prismicEmbed",
-    "description": "Yields a ready-to-use `<PrismicEmbed />` component",
-    "body": [
-      "<PrismicEmbed :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
-    ]
-  },
-  "Prismic Group": {
-    "scope": "html",
-    "prefix": "prismicGroup",
-    "description": "Yields a ready-to-use Group field/Slice repeatable template",
-    "body": [
-      "<${3:div} v-for=\"${2:item} in ${1:slice.items}\" :key=\"${2:item}\">",
-      "\t{{ ${2:item} }}${4}",
-      "</${3:div}>"
-    ]
-  },
-  "Prismic Image": {
-    "scope": "html",
-    "prefix": "prismicImage",
-    "description": "Yields a ready-to-use `<PrismicImage />` component",
-    "body": [
-      "<PrismicImage :field=\"${1:doc.data.field}\" />"
-    ]
-  },
-  "Prismic Link": {
-    "scope": "html",
-    "prefix": "prismicLink",
-    "description": "Yields a ready-to-use `<PrismicLink />` component",
-    "body": [
-      "<PrismicLink :field=\"${1:doc.data.field}\">",
-      "\t${2}",
-      "</PrismicLink>"
-    ]
-  },
-  "Prismic Rich Text": {
-    "scope": "html",
-    "prefix": "prismicRichText",
-    "description": "Yields a ready-to-use `<PrismicRichText />` component",
-    "body": [
-      "<PrismicRichText :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
-    ]
-  },
-  "Prismic SliceZone": {
-    "scope": "html",
-    "prefix": "prismicSliceZone",
-    "description": "Yields a ready-to-use `<SliceZone />` component",
-    "body": [
-      "<SliceZone :slices=\"${1:doc.data.body}\" :components=\"${2:components}\" ${4:wrapper=\"${3:div}\" }/>"
-    ]
-  },
-  "Prismic Text": {
-    "scope": "html",
-    "prefix": "prismicText",
-    "description": "Yields a ready-to-use `<PrismicText />` component",
-    "body": [
-      "<PrismicText :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
-    ]
-  }
+	"Prismic Embed": {
+		"scope": "html",
+		"prefix": "prismicEmbed",
+		"description": "Yields a ready-to-use `<PrismicEmbed />` component",
+		"body": [
+			"<PrismicEmbed :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
+		]
+	},
+	"Prismic Group": {
+		"scope": "html",
+		"prefix": "prismicGroup",
+		"description": "Yields a ready-to-use Group field/Slice repeatable template",
+		"body": [
+			"<${3:div} v-for=\"${2:item} in ${1:slice.items}\" :key=\"${2:item}\">",
+			"\t{{ ${2:item} }}${4}",
+			"</${3:div}>"
+		]
+	},
+	"Prismic Image": {
+		"scope": "html",
+		"prefix": "prismicImage",
+		"description": "Yields a ready-to-use `<PrismicImage />` component",
+		"body": [
+			"<PrismicImage :field=\"${1:doc.data.field}\" />"
+		]
+	},
+	"Prismic Link": {
+		"scope": "html",
+		"prefix": "prismicLink",
+		"description": "Yields a ready-to-use `<PrismicLink />` component",
+		"body": [
+			"<PrismicLink :field=\"${1:doc.data.field}\">",
+			"\t${2}",
+			"</PrismicLink>"
+		]
+	},
+	"Prismic Rich Text": {
+		"scope": "html",
+		"prefix": "prismicRichText",
+		"description": "Yields a ready-to-use `<PrismicRichText />` component",
+		"body": [
+			"<PrismicRichText :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
+		]
+	},
+	"Prismic SliceZone": {
+		"scope": "html",
+		"prefix": "prismicSliceZone",
+		"description": "Yields a ready-to-use `<SliceZone />` component",
+		"body": [
+			"<SliceZone :slices=\"${1:doc.data.body}\" :components=\"${2:components}\" ${4:wrapper=\"${3:div}\" }/>"
+		]
+	},
+	"Prismic Text": {
+		"scope": "html",
+		"prefix": "prismicText",
+		"description": "Yields a ready-to-use `<PrismicText />` component",
+		"body": [
+			"<PrismicText :field=\"${1:doc.data.field}\" ${3:wrapper=\"${2:div}\" }/>"
+		]
+	}
 }

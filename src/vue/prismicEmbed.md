@@ -1,7 +1,7 @@
 ---
 name: "Prismic Embed"
 description: "Yields a ready-to-use `<PrismicEmbed />` component"
-scope: ["vue-html", "html"]
+scopes: ["vue-html", "html"]
 prefix: "prismicEmbed"
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: "Prismic Text"
 description: "Yields a ready-to-use `<PrismicText />` component"
-scope: ["javascript", "javascriptreact", "typescriptreact"]
+scopes: ["javascript", "javascriptreact", "typescriptreact"]
 prefix: "prismicText"
 ---
 

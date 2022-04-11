@@ -1,7 +1,7 @@
 ---
 name: "Prismic Route Resolver Scaffold"
 description: "Yields a ready-to-use Route Resolver scaffold"
-scope: ["javascript", "typescript"]
+scopes: ["javascript", "typescript"]
 prefix: "prismicRouteResolverScaffold"
 ---
 
