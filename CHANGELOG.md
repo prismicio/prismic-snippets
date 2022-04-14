@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.10](https://github.com/prismicio/prismic-snippets/compare/v0.0.9...v0.0.10) (2022-04-14)
+
+
+### Bug Fixes
+
+* **deps:** escape non-variable ([3af9237](https://github.com/prismicio/prismic-snippets/commit/3af923724f8cd0ba09c9b5541fe1acd569c3f3c7))
+
 ### [0.0.9](https://github.com/prismicio/prismic-snippets/compare/v0.0.8...v0.0.9) (2022-04-11)
 
 
