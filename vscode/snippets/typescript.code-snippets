@@ -8,8 +8,8 @@
 			"",
 			"const htmlSerializer: prismicH.HTMLMapSerializer = {",
 			"\t// Those are just examples, update them and add your own~",
-			"\theading1: ({ children }) => `<h2>${children}</h2>`,",
-			"\tparagraph: ({ children }) => `<p class=\"fooBar\">${children}</p>`,",
+			"\theading1: ({ children }) => `<h2>\\${children}</h2>`,",
+			"\tparagraph: ({ children }) => `<p class=\"fooBar\">\\${children}</p>`,",
 			"};"
 		]
 	},
