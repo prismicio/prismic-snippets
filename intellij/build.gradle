@@ -22,9 +22,12 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version = '2021.3.3'
+    updateSinceUntilBuild = false
+    sameSinceUntilBuild= true
 }
 patchPluginXml {
     changeNotes = """See <a href="https://github.com/prismicio/prismic-snippets/blob/master/CHANGELOG.md">CHANGELOG.md</a>"""
+	sinceBuild = "213.7172"
 }
 publishPlugin {
     token = System.getenv("ORG_GRADLE_PROJECT_intellijPublishToken")
